@@ -72,7 +72,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "C2M_F_DOUBLE_QT";
             #binding-cells = <0>;
-            bindings = <&kp F>, <&kp DOUBLE_QUOTES>;
+            bindings = <&kp F>, <&kp NUMBER_2>;
         };
     };
 
