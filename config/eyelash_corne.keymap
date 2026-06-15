@@ -6,6 +6,7 @@
 #include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -168,10 +169,10 @@
         layer_3 {
             display-name = "numbers";
             bindings = <
-&studio_unlock   &kp F1          &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp SLASH        &kp BACKSPACE
-&rgb_ug RGB_OFF  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &kp F12
-&rgb_ug RGB_ON   &sys_reset      &trans        &bootloader   &trans        &trans        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp DOT         &kp N1  &kp N2  &kp N3  &kp MINUS        &kp DEL
-                                               &kp LEFT_ALT  &trans        &kp SPACE                                                                    &kp ENTER       &trans  &kp N0
+&studio_unlock   &kp F1          &kp F2            &kp F3        &kp F4             &kp F5                                      &mmv MOVE_UP                     &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp SLASH        &kp BACKSPACE
+&rgb_ug RGB_OFF  &bt BT_CLR_ALL  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &kp F12
+&rgb_ug RGB_ON   &sys_reset      &ext_power EP_ON  &bootloader   &ext_power EP_OFF  &trans        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp DOT         &kp N1  &kp N2  &kp N3  &kp MINUS        &kp DEL
+                                                   &kp LEFT_ALT  &trans             &kp SPACE                                                                    &kp ENTER       &trans  &kp N0
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -182,8 +183,8 @@
         compatible = "zmk,conditional-layers";
 
         numbers {
-            if-layers = <1>;
-            then-layer = <2>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
