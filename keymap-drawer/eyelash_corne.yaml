@@ -181,7 +181,7 @@ layers:
   - EP ON
   - $$mdi:progress-download$$
   - EP OFF
-  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - KP DOT
