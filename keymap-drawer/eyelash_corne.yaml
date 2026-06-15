@@ -149,11 +149,11 @@ layers:
   - $$mdi:apple-keyboard-option$$
   pad_numbers:
   - '&studio_unlock'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - RGB BRI
+  - RGB BRD
+  - RGB SPI
+  - RGB EFF
+  - RGB COLOR HSB(195,93,54)
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - KP NUMLOCK
   - {t: '7', s: '&'}
