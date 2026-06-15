@@ -135,7 +135,7 @@
 &kp ESCAPE  &kp Q  &csr2m_tp_w_f2  &kp E                &kp R                  &csr2m_tp_t_f5                         &kp UP                &csr2m_tp_Y_PrintScreen  &kp U  &kp I      &kp O    &kp P     &csr2m_tp_acento_bksp
 &td0        &kp A  &kp S           &kp D                &csr2m_tp_f_double_qt  &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                    &kp J  &kp K      &kp L    &kp SEMI  &csr2m_tp_RShift_CAPS
 &kp LCTRL   &kp Z  &kp X           &kp C                &kp V                  &kp B           &kp SPACE              &kp DOWN              &kp N                    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                                   &csr2m_tp_LAlt_LGui  &mo 4                  &lt 0 SPACE                                                  &lt 0 ENTER              &mo 3  &kp RALT
+                                   &csr2m_tp_LAlt_LGui  &mo 1                  &lt 0 SPACE                                                  &lt 0 ENTER              &mo 3  &kp RALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
