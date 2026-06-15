@@ -45,8 +45,8 @@ layers:
   - {t: '=', s: +}
   - '&csr2m_tp_LAlt_LGui'
   - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: QWERTY}
-  - {t: '$$mdi:keyboard-return$$', h: QWERTY}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - fns
   - $$mdi:apple-keyboard-option$$
   NUMBER:
@@ -72,8 +72,8 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - <
+  - {t: \, s: '|'}
   - $$mdi:arrow-up-bold$$
   - HOME
   - END
@@ -86,7 +86,7 @@ layers:
   - {t: '-', s: _}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '=', s: +}
+  - {t: ']', s: '}'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   fns:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - F1
   - F2
   - F3
@@ -116,8 +116,8 @@ layers:
   - Q
   - Sft+3
   - {t: Sft+5, s: Sft+%}
-  - '6'
-  - '1'
+  - Sft+6
+  - {t: '=', s: +}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -130,8 +130,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - <
-  - Sft+<
+  - NUBS
+  - Sft+NUBS
   - Sft+4
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - $$mdi:apple-keyboard-option$$
-  numbers:
+  pad_numbers:
   - '&studio_unlock'
   - F1
   - F2
@@ -159,7 +159,7 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: /, s: '?'}
+  - KP SLASH
   - {t: '$$mdi:backspace$$', type: backspace}
   - RGB OFF
   - BT CLR ALL
@@ -170,12 +170,12 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - +
+  - KP PLUS
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - KP MULTIPLY
-  - F12
+  - KP EQUAL
   - RGB ON
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - EP ON
@@ -184,11 +184,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: ., s: '>'}
+  - KP DOT
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: '-', s: _}
+  - KP MINUS
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
   - {type: held}
