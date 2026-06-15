@@ -47,7 +47,7 @@ layers:
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: QWERTY}
   - {t: '$$mdi:keyboard-return$$', h: QWERTY}
-  - Fn
+  - fns
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - $$mdi:keyboard-tab$$
@@ -95,10 +95,10 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {type: held}
   - $$mdi:keyboard-space$$
-  - INS
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
+  - $$mdi:apple-keyboard-option$$
+  fns:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -142,12 +142,12 @@ layers:
   - '|'
   - '6'
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:apple-keyboard-option$$
-  Fn:
+  numbers:
   - '&studio_unlock'
   - F1
   - F2
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
 combos:
 - p: [1, 15, 29]
