@@ -135,7 +135,7 @@
 &kp ESCAPE  &kp Q  &csr2m_tp_w_f2  &kp E                &kp R                  &csr2m_tp_t_f5                         &kp UP                &csr2m_tp_Y_PrintScreen  &kp U  &kp I      &kp O    &kp P     &csr2m_tp_acento_bksp
 &td0        &kp A  &kp S           &kp D                &csr2m_tp_f_double_qt  &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                    &kp J  &kp K      &kp L    &kp SEMI  &csr2m_tp_RShift_CAPS
 &kp LCTRL   &kp Z  &kp X           &kp C                &kp V                  &kp B           &kp SPACE              &kp DOWN              &kp N                    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                                   &csr2m_tp_LAlt_LGui  &mo 1                  &lt 0 SPACE                                                  &lt 0 ENTER              &mo 3  &kp RALT
+                                   &csr2m_tp_LAlt_LGui  &mo 1                  &lt 0 SPACE                                                  &lt 0 ENTER              &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -144,17 +144,17 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp TAB         &kp N1             &kp N2        &kp N3        &kp N4         &kp N5                                   &mmv MOVE_UP                     &kp N6     &kp N7    &kp N8    &kp N9     &kp N0   &kp BSPC
-&kp LEFT_SHIFT  &kp K_APPLICATION  &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LBKT   &kp RBKT  &kp UP    &kp HOME   &kp END  &kp INSERT
-&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &kp DEL
-                                                 &kp LEFT_GUI  &trans         &kp SPACE                                                                 &kp INS    &kp DEL   &trans
+&kp TAB         &kp N1             &kp N2        &kp N3        &kp N4         &kp N5                                   &mmv MOVE_UP                     &kp N6     &kp N7    &kp N8         &kp N9     &kp N0   &kp BSPC
+&kp LEFT_SHIFT  &kp K_APPLICATION  &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LBKT   &kp RBKT  &kp UP         &kp HOME   &kp END  &kp INSERT
+&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp LEFT  &kp DOWN       &kp RIGHT  &trans   &kp DEL
+                                                 &kp LEFT_GUI  &trans         &kp SPACE                                                                 &kp ENTER  &trans    &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "fns";
             bindings = <
 &trans     &kp F1        &kp F2            &kp F3         &kp F4             &kp F5                                      &mmv MOVE_UP                     &kp F6         &kp F7            &kp F8         &kp F9    &kp F10   &kp F11
 &kp LSHFT  &kp Q         &kp LS(NUMBER_3)  &kp LS(N5)     &kp NUMBER_6       &kp NUMBER_1                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(MINUS)  &kp LS(NUMBER_1)  &kp LBKT       &kp RBKT  &kp F12   &kp GRAVE
@@ -166,7 +166,7 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "numbers";
             bindings = <
 &studio_unlock   &kp F1          &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp SLASH        &kp BACKSPACE
 &rgb_ug RGB_OFF  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &kp F12
@@ -175,6 +175,15 @@
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        numbers {
+            if-layers = <1>;
+            then-layer = <2>;
         };
     };
 };
