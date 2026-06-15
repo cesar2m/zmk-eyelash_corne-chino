@@ -169,10 +169,10 @@
         layer_3 {
             display-name = "pad_numbers";
             bindings = <
-&studio_unlock   &kp F1          &kp F2            &kp F3        &kp F4             &kp F5                                      &mmv MOVE_UP                     &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp KP_SLASH     &kp BACKSPACE
-&rgb_ug RGB_OFF  &bt BT_CLR_ALL  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_PLUS     &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &kp KP_EQUAL
-&rgb_ug RGB_ON   &sys_reset      &ext_power EP_ON  &bootloader   &ext_power EP_OFF  &trans        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp KP_DOT      &kp N1  &kp N2  &kp N3  &kp KP_MINUS     &kp DEL
-                                                   &kp LEFT_ALT  &trans             &kp SPACE                                                                    &kp ENTER       &trans  &kp N0
+&studio_unlock   &kp F1          &kp F2            &kp F3        &kp F4             &kp F5                                           &mmv MOVE_UP                     &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp KP_SLASH     &kp BACKSPACE
+&rgb_ug RGB_OFF  &bt BT_CLR_ALL  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_PLUS     &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &kp KP_EQUAL
+&rgb_ug RGB_ON   &sys_reset      &ext_power EP_ON  &bootloader   &ext_power EP_OFF  &ext_power EP_TOG  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp KP_DOT      &kp N1  &kp N2  &kp N3  &kp KP_MINUS     &kp DEL
+                                                   &kp LEFT_ALT  &trans             &kp SPACE                                                                         &kp ENTER       &trans  &kp N0
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
