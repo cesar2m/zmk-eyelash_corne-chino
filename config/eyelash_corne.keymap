@@ -73,6 +73,8 @@
             label = "CSR2M_TP_F_DOUBLE_QT";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp RS(NUMBER_2)>;
+
+            tapping-term-ms = <150>;
         };
 
         csr2m_tp_w_f2: csr2m_tp_w_f2 {
@@ -94,6 +96,8 @@
             label = "CSR2M_TP_T_F5";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp F5>;
+
+            tapping-term-ms = <150>;
         };
 
         csr2m_tp_Y_PrintScreen: csr2m_tp_Y_PrintScreen {
@@ -101,6 +105,8 @@
             label = "CSR2M_TP_Y_PRINTSCREEN";
             #binding-cells = <0>;
             bindings = <&kp Y>, <&kp PRINTSCREEN>;
+
+            tapping-term-ms = <150>;
         };
 
         csr2m_tp_RShift_CAPS: csr2m_tp_RShift_CAPS {
